@@ -1,6 +1,6 @@
 # Container Version Manager - deep test
 
-29/29 checks passed (2026-09-19 17:17)
+29/29 checks passed (2026-09-19 19:36)
 
 | Section | Check | Result | Detail |
 |---|---|---|---|
@@ -17,11 +17,11 @@
 | Snapshots | Make default 1.1 (a Workflow Server operation; a Process Center may refuse it) | PASS | Error: 0 of 1 snapshot(s) make_defaultd - refused: 1.1: CWTBG0688E: This action can be performed only on a workflow server. / ['1.1 1.1 Main no yes no New no Standard 2026-09-19 16:04:23 celladmin Triage Sample 1.1'] |
 | Snapshots | Export CSV (snapshots) | PASS |  |
 | Snapshots | Delete unnamed snapshots asks for confirmation | PASS | Delete the unnamed snapshots of TRGSMP beyond the kept number / older than the date (Workflow Center only)? The deletion |
-| Snapshots | unnamed snapshot cleanup is accepted and queued (Queue tab) | PASS | Success: unnamed snapshot cleanup of TRGSMP accepted - operation running (last change 2026-09-19 21:14:10) - refresh the status until it finishes / https://localhost:9443/ops/system/queue/161?key=234a3e51418cd1efcfac69b8e3855abe |
-| Queue | queued cleanup finishes (failure "nothing to delete" is the expected answer with kept number 5) | PASS | Status  Info: operation failure (last change 2026-09-19 21:14:10) - finished: The keptNumber is greater than the number of found snapshots, nothing to delete |
+| Snapshots | unnamed snapshot cleanup is accepted and queued (Queue tab) | PASS | Success: unnamed snapshot cleanup of TRGSMP accepted - operation running (last change 2026-09-19 23:33:47) - refresh the status until it finishes / https://localhost:9443/ops/system/queue/164?key=62d6066cb9d528a22e09ff7112e1550a |
+| Queue | queued cleanup finishes (failure "nothing to delete" is the expected answer with kept number 5) | PASS | Status  Info: operation failure (last change 2026-09-19 23:33:47) - finished: The keptNumber is greater than the number of found snapshots, nothing to delete |
 | Variables | environment variables of TLIST / 1.0 listed | PASS | Info: 14 environment variable(s), 0 EPV value(s) of TLIST / 1.0 / 14 rows |
 | Variables | row selection fills the editor | PASS | appTitle = Task Lists (dbg) |
-| Variables | Set value updates the variable on the server and the list refreshes | PASS | Success: appTitle = Task Lists (dbg) (CVMGR test) set on TLIST / 1.0 (the running snapshot reads the / ['appTitle Task Lists (dbg) (CVMGR test)'] |
+| Variables | Set value updates the variable on the server and the list refreshes | PASS | Success: appTitle = Task Lists (dbg) (CVMGR test) stored for TLIST / 1.0 - the engine reads environm / ['appTitle Task Lists (dbg) (CVMGR test)'] |
 | Variables | original value restored | PASS |  |
 | Variables | Export CSV (variables) | PASS |  |
 | Cleanup | Count instances (terminated, one application) | PASS | Info: 0 instance(s) in state terminated of TRGSMP |
@@ -30,7 +30,7 @@
 | Queue | the URL of the accepted deletion is refreshed (instance count after the deletion) | PASS | Status  Info: GET /std/bpm/processes/count -> { "count": 0 } |
 | Cleanup | count after the deletion is 0 | PASS | Info: 0 instance(s) in state terminated of TRGSMP |
 | Cleanup | Delete closed tasks: accepted on BAW 24 / CP4BA, a clear error on 8.6.2 (no /std/bpm/tasks) | PASS | Error: closed-task cleanup of TRGSMP refused: HTTP 404 |
-| Cleanup | Resume suspended instances is accepted (queued) | PASS | Success: resume of the suspended instances of TRGSMP / 1.1 accepted - operation success (last change 2026-09-19 21:16:45) - finished |
+| Cleanup | Resume suspended instances is accepted (queued) | PASS | Success: resume of the suspended instances of TRGSMP / 1.1 accepted - operation success (last change 2026-09-19 23:36:22) - finished |
 | all | no JavaScript errors | PASS | [] |
 | all | no failed HTTP calls of the coach | PASS | [] |
 
