@@ -22,7 +22,7 @@ server* for *Make default* on a Process Center, or *nothing to delete* from an u
 
 | File | Target | Notes |
 |---|---|---|
-| [`packages/Container-Version-Manager-1.0.twx`](packages/Container-Version-Manager-1.0.twx) | traditional BAW / IBM BPM 8.6.x and later, CP4BA | process app **Container Version Manager** (`CVMGR`) 1.0 |
+| [`packages/Container-Version-Manager-1.0.1.twx`](packages/Container-Version-Manager-1.0.1.twx) | traditional BAW / IBM BPM 8.6.x and later, CP4BA | process app **Container Version Manager** (`CVMGR`) 1.0.1 |
 
 Dependencies: System Data and UI Toolkit only. The same file is attached to the [releases](../../releases).
 
